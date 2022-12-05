@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
+/*
 
 //메인 클래스
 public class Main {
@@ -18,57 +19,37 @@ public class Main {
             arr[i] = fr.nextInt();
 
         }
+
         for(int p = 0; p < 7; p++){
             arrSum = arrSum + arr[p];
             detectArr.add(arr[p]);
-            if (arrSum == 100) {
-                Collections.sort(detectArr);
-                System.out.println(detectArr);
-            }
         }
+        if (arrSum == 100) {
+            Collections.sort(detectArr);
+            System.out.println(detectArr);
+        } else {
             arrSum = 0;
             detectArr.clear();
             for (int j = 1; j < 8; j++) {
                 arrSum = arrSum + arr[j];
                 detectArr.add(arr[j]);
-                if (arrSum == 100) {
-                    Collections.sort(detectArr);
-                    System.out.println(detectArr);
+            }
+            if (arrSum == 100) {
+                Collections.sort(detectArr);
+                System.out.println(detectArr);
+            } else {
+                arrSum = 0;
+                detectArr.clear();
+                for (int k = 2; k < 9; k++) {
+                    arrSum = arrSum + arr[k];
+                    detectArr.add(arr[k]);
+                    if (arrSum == 100) {
+                        Collections.sort(detectArr);
+                        System.out.println(detectArr);
+                    }
                 }
             }
-            arrSum = 0;
-            detectArr.clear();
-            for (int k = 2; k < 9; k++) {
-                arrSum = arrSum + arr[k];
-                detectArr.add(arr[k]);
-                if (arrSum == 100) {
-                    Collections.sort(detectArr);
-                    for(int kk = 0; kk < 7; kk++)  System.out.println(detectArr.get(kk));
-                }
-            }
-            arrSum = 0;
-            detectArr.clear();
-            for(int u = 3; u < 9; u++){  // 3~8 = 6인
-                arrSum = arrSum + arr[u] + arr[0];
-                detectArr.add(arr[u]);
-                detectArr.add(arr[0]);
-                if (arrSum == 100) {
-                    Collections.sort(detectArr);
-                    System.out.println(detectArr);
-                }
-            }
-            arrSum = 0;
-            detectArr.clear();
-            for(int w = 3; w < 9; w++){  // 3~8 = 6인
-                arrSum = arrSum + arr[w] + arr[1];
-                detectArr.add(arr[w]);
-                detectArr.add(arr[0]);
-                if (arrSum == 100) {
-                    Collections.sort(detectArr);
-                    System.out.println(detectArr);
-                }
-            }
-
+        }
     }
 
 
@@ -113,4 +94,4 @@ public class Main {
             return str;
         }
     }
-}
+}*/

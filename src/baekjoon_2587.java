@@ -1,35 +1,21 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.StringTokenizer;
-
 /*
 public class baekjoon_2576 {
+
     public static void main(String[] args) {
-        Main.FastReader fr=new Main.FastReader();
 
-        int input[] = new int[7];
-        List<Integer> singleArr = new ArrayList<Integer>();
-        int singleSum = 0; // 홀수 총합
-        int smallSingle = 0;
+        FastReader fr=new FastReader();
 
-        for(int i=0; i<7; i++){
-            input[i] = fr.nextInt();
-            if(input[i]%2 == 1){
-                singleSum = singleSum + input[i];
+        int arr[] = new int[5];
+        int arrSum = 0;
 
-                singleArr.add(input[i]);
-            }
-
-            Collections.sort(singleArr);
+        for(int i=0; i<5; i++){
+            arr[i] = fr.nextInt();
+            arrSum = arrSum + arr[i];
         }
-        if(!(singleSum==0)) System.out.println(singleSum);
-        else { System.out.println(-1); }
-        if(!singleArr.isEmpty()) System.out.println(singleArr.get(0));
+        Arrays.sort(arr);
 
+        System.out.println(arrSum/arr.length);
+        System.out.println(arr[2]);
 
     }
 
