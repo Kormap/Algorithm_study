@@ -1,13 +1,14 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
 
-//메인 클래스
-public class Main {
-
+public class baekjoon_2576 {
     public static void main(String[] args) {
-        FastReader fr=new FastReader();
+        Main.FastReader fr=new Main.FastReader();
 
         int input[] = new int[7];
         List<Integer> singleArr = new ArrayList<Integer>();
