@@ -1,3 +1,4 @@
+/*
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,22 +11,24 @@ public class Main {
 
         FastReader fr = new FastReader();
 
-        //통화 목록 갯수 입력
-        int callCount = fr.nextInt();
-        //통화 시간 입력
-        int callTime = fr.nextInt();
+        long a = fr.nextLong();
+        long b = fr.nextLong();
 
-        int youngCharge = fr.nextInt();
-        int dongCharge = fr.nextInt();
-
-        for(int i=0; i<callCount; i++){
-
-
-
+        if(a>b) {
+            System.out.println(a-b-1);
+            for(long i=b+1;i<a;i++) {
+                System.out.print(i+" ");
+            }
         }
-
-
-
+        if(b>a) {
+            System.out.println(b-a-1);
+            for(long i=a+1;i<b;i++) {
+                System.out.print(i+" ");
+            }
+        }
+        if(a==b) {
+            System.out.println(0);
+        }
 
     }
 
@@ -71,4 +74,4 @@ public class Main {
             return str;
         }
     }
-}
+}*/
